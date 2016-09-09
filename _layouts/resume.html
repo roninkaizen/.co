@@ -9,20 +9,20 @@
 
       <header class="page-header">
 
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        <div class="executive-summary" itemprop="description">
+          <p style="color:red!important">This page contains non-sense information and non-working contact information. Do not use it. How did you get here anyways? :-)</p>
+        </div>
+
         {% if site.resume_avatar == 'true' %}
         <img src="images/avatar.jpg" alt="my photo" class="avatar" itemprop="image">
         {% endif %}
 
-        <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
         <div class="title-bar">
 
-          <!-- Your title is also defined in the _config.yml file -->
           <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
 
-          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
@@ -31,9 +31,9 @@
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
-        <!-- a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a -->
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Mail me</a>
         {% elsif site.resume_looking_for_work == 'no' %}
-        <!-- a class="contact-button not-looking">I'm not looking for work right now.</a -->
+        <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %}
         {% endif %}
 
@@ -78,19 +78,19 @@
         </header>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Hasso-Plattner-Institute<a href="http://hpi.de" target="_blank">hpi.de</a></h3>
+          <h3 class="resume-item-title" itemprop="name">Hasso-Plattner-Institute, <a href="http://hpi.de" target="_blank">hpi.de</a></h3>
           <h4 class="resume-item-details" itemprop="description">Computer Graphics Systems, PhD &bull; 2017 &mdash; Future</h4>
           <p class="resume-item-copy">Computer Graphics, Spatial Analytics, Geovisualization, Urban Complexity</p>
         </div>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">University of Potsdam<a href="http://uni-potsdam.de" target="_blank">uni-potsdam.de</a></h3>
+          <h3 class="resume-item-title" itemprop="name">University of Potsdam, <a href="http://uni-potsdam.de" target="_blank">uni-potsdam.de</a></h3>
           <h4 class="resume-item-details" itemprop="description">Geoinforation and Visualization, MSc &bull; 2012 &mdash; 2017</h4>
           <p class="resume-item-copy">Geographic Information Sciences, Geovisualization, Computer Graphics</p>
         </div>
 
         <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">HTW Berlin, University of Applied Sciences<a href="http://htw-berlin.de" target="_blank">htw-berlin.de</a></h3>
+          <h3 class="resume-item-title" itemprop="name">HTW Berlin, University of Applied Sciences, <a href="http://htw-berlin.de" target="_blank">htw-berlin.de</a></h3>
           <h4 class="resume-item-details" itemprop="description">Industrial Environmental Informatics, BSct &bull; 2008 &mdash; 2012</h4>
           <p class="resume-item-copy">Applied Computer Sciences, Software Engineering, Green IT, Environmental Management</p>
         </div>
