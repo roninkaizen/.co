@@ -27,6 +27,7 @@
     @include border-radius(100px);
     margin: 0 auto;
     display: block;
+    text-align:center;
   }
 
   .header-name {
@@ -100,9 +101,9 @@
   background-color: #efefef;
   text-decoration: none;
   text-align: center;
-  display: block;
+  display: inline-block;
   margin: 1.5rem auto;
-  width: 220px;
+  width: 90px;
   font-size: 1.375rem;
   @include sans_light;
   color: #333;
