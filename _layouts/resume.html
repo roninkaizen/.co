@@ -10,7 +10,7 @@
       <header class="page-header">
 
         <div class="executive-summary" itemprop="description">
-          <p style="color:red!important">This page contains non-sense information and non-working contact information. Do not use it. How did you get here anyways? :-)</p>
+          <p style="color:red!important;margin-bottom:5em">This page contains non-sense information and non-working contact information. Do not use it. How did you get here anyways? :-O :-D</p>
         </div>
 
         {% if site.resume_avatar == 'true' %}
@@ -31,7 +31,7 @@
         </div>
 
         {% if site.resume_looking_for_work == 'yes' %}
-        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Mail me</a>
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Mail</a> <a href="{{ site.resume_contact_telegram }}" class="contact-button" itemprop="email">Telegram</a>
         {% elsif site.resume_looking_for_work == 'no' %}
         <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %}
